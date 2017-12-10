@@ -10,6 +10,10 @@ The goal of this repository is to provide a ~~state of the art~~ model implement
 # Table of Contents
 1. [User Stories](#user-stories)
 2. [UI](#ui)
+3. [Implementation Steps]()
+    1. [Flow view controllers](#flow-view-controllers)
+    2. TBD
+4. TBD
 
 ## User Stories
 
@@ -57,4 +61,7 @@ SO THAT I'll be able to learn more on the same topic.
 | ![PresentationsList.png](Resources/PresentationsList.png) | ![PresentationDetails.png](Resources/PresentationDetails.png) |
 
 
+## Flow view controllers
+
+![UMLDiagram](Resources/UMLDiagram.png)
 
