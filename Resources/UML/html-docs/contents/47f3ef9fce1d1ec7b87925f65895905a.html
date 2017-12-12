@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ListFlowViewController</title>
+        <title>PresentationEntity</title>
         <!-- <script src="http://use.edgefonts.net/source-sans-pro;source-code-pro.js"></script> -->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
@@ -20,7 +20,7 @@
 
             <!-- Name Title -->
 
-            <h1>ListFlowViewController</h1>
+            <h1>PresentationEntity</h1>
 
             <!-- Type and Stereotype -->
 
@@ -42,13 +42,10 @@
                     <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon _icon-Project'></span>Beilmo_Clean</a></span>
                 
                     <span>::</span>
-                    <span class="label label-info"><a href='594af663de577680f35b13183109d675.html'><span class='node-icon _icon-UMLModel'></span>Model</a></span>
+                    <span class="label label-info"><a href='f7d4b59123907e01a1516b2420020c92.html'><span class='node-icon _icon-UMLModel'></span>Entities</a></span>
                 
                     <span>::</span>
-                    <span class="label label-info"><a href='5b149a9696a6fae2f1179cac69c1e3ce.html'><span class='node-icon _icon-UMLPackage'></span>pkg.application</a></span>
-                
-                    <span>::</span>
-                    <span class="label label-info"><a href='58e8d4659bc798ad3890a9887ea60d4c.html'><span class='node-icon _icon-UMLClass'></span>ListFlowViewController</a></span>
+                    <span class="label label-info"><a href='47f3ef9fce1d1ec7b87925f65895905a.html'><span class='node-icon _icon-UMLClass'></span>PresentationEntity</a></span>
                 
             </section>
 
@@ -86,28 +83,10 @@
             
                 
                 
-<section class="element-list">
-    <h3>Generalized Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='9c62b5a27dd766b116fb324154d85ee4.html'><span class='node-icon _icon-UMLClass'></span>UIViewController</a></li>
-        
-    </ul>
-</section>
-
 
 
                 
                 
-<section class="element-list">
-    <h3>Specialized Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='42f82590270ee917ceed29cf470385c2.html'><span class='node-icon _icon-UMLClass'></span>TopicListFlowViewController</a></li>
-        
-    </ul>
-</section>
-
 
 
                 
@@ -165,16 +144,58 @@
                     </tr>
                     
                     <tr>
-                        <td>private</td>
-                        <td><a href="e33242000f8d567c2d960d5c38f7c05a.html">embededNavigationController</a></td>
-                        <td>UINavigationController</td>
+                        <td>public</td>
+                        <td><a href="5f7bcaa1ddb2242b700a23a16c8e0894.html">presentationId</a></td>
+                        <td>String</td>
                         <td></td>
                     </tr>
                     
                     <tr>
                         <td>public</td>
-                        <td><a href="93d2ac95f617fca6ce6b06e450d2932c.html">listViewController</a></td>
-                        <td><a href='9c62b5a27dd766b116fb324154d85ee4.html'>UIViewController</a></td>
+                        <td><a href="5eff6c2016c299e4eb824556359c9a9c.html">presentationTitle</a></td>
+                        <td>String</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="da563590154de17e70384d81d26616ba.html">presentationSubtitle</a></td>
+                        <td>String</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="904feddfc44ec0f99a7ae6adec4df438.html">presentationDescription</a></td>
+                        <td>String</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="087a54161e8e421d0779f903da2c3dc5.html">isFavorite</a></td>
+                        <td>Boolean</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="5d6bd7da8ac44b0e8630014bb21ab456.html">mediaContent</a></td>
+                        <td>URL</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="a5cac12d6dacd09325036e2a01b856db.html">thumbnailImage</a></td>
+                        <td>URL</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>public</td>
+                        <td><a href="3b81fc9e176d474d955b688181e7796b.html">relatedPresentations</a></td>
+                        <td>Array &lt;PresentationEntity&gt;</td>
                         <td></td>
                     </tr>
                     
@@ -262,7 +283,7 @@
     
     <tr>
         <td>name</td>
-        <td>ListFlowViewController</td>
+        <td>PresentationEntity</td>
     </tr>
     
     
@@ -365,17 +386,6 @@
 
             
             
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='7b659966e875c63b93c7900543ccfa75.html'><span class='node-icon _icon-UMLGeneralization'></span>subclasses (ListFlowViewController→UIViewController)</a></li>
-        
-        <li><a href='a178bbe60ebfc1793ee708cb4623c803.html'><span class='node-icon _icon-UMLGeneralization'></span>subclasses (TopicListFlowViewController→ListFlowViewController)</a></li>
-        
-    </ul>
-</section>
-
 
 
             <!-- Owned Elements -->
@@ -386,7 +396,7 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='7b659966e875c63b93c7900543ccfa75.html'><span class='node-icon _icon-UMLGeneralization'></span>subclasses (ListFlowViewController→UIViewController)</a></li>
+        <li><a href='8b2b33b615d7b3324fda7f54a8ac49f2.html'><span class='node-icon _icon-UMLDataType'></span>DataType1</a></li>
         
     </ul>
 </section>
