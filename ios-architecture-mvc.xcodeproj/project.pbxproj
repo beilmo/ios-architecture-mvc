@@ -14,8 +14,13 @@
 		6F7418C51FDD68040019DC1F /* UIViewController+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418C41FDD68040019DC1F /* UIViewController+Embed.swift */; };
 		6F7418C71FDD6CCB0019DC1F /* TopicListFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418C61FDD6CCB0019DC1F /* TopicListFlowViewController.swift */; };
 		6F7418C91FDD6CEE0019DC1F /* TopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418C81FDD6CEE0019DC1F /* TopicListViewController.swift */; };
-		6F7418CB1FDD6D350019DC1F /* TopicDetailsFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418CA1FDD6D350019DC1F /* TopicDetailsFlowViewController.swift */; };
+		6F7418CB1FDD6D350019DC1F /* TopicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418CA1FDD6D350019DC1F /* TopicDetailsViewController.swift */; };
 		6F7418CD1FDD719D0019DC1F /* TopicListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418CC1FDD719D0019DC1F /* TopicListDelegate.swift */; };
+		6FE25CEC1FFD44400060F2C8 /* TopicVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CEB1FFD44400060F2C8 /* TopicVideoViewController.swift */; };
+		6FE25CEE1FFD44B40060F2C8 /* TopicTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CED1FFD44B40060F2C8 /* TopicTitleViewController.swift */; };
+		6FE25CF01FFD44DF0060F2C8 /* TopicDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CEF1FFD44DF0060F2C8 /* TopicDescriptionViewController.swift */; };
+		6FE25CF21FFD450F0060F2C8 /* TopicActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CF11FFD450F0060F2C8 /* TopicActionsViewController.swift */; };
+		6FE25CF41FFD45370060F2C8 /* RelatedTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CF31FFD45370060F2C8 /* RelatedTopicsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +33,13 @@
 		6F7418C41FDD68040019DC1F /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
 		6F7418C61FDD6CCB0019DC1F /* TopicListFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListFlowViewController.swift; sourceTree = "<group>"; };
 		6F7418C81FDD6CEE0019DC1F /* TopicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListViewController.swift; sourceTree = "<group>"; };
-		6F7418CA1FDD6D350019DC1F /* TopicDetailsFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsFlowViewController.swift; sourceTree = "<group>"; };
+		6F7418CA1FDD6D350019DC1F /* TopicDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsViewController.swift; sourceTree = "<group>"; };
 		6F7418CC1FDD719D0019DC1F /* TopicListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListDelegate.swift; sourceTree = "<group>"; };
+		6FE25CEB1FFD44400060F2C8 /* TopicVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVideoViewController.swift; sourceTree = "<group>"; };
+		6FE25CED1FFD44B40060F2C8 /* TopicTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTitleViewController.swift; sourceTree = "<group>"; };
+		6FE25CEF1FFD44DF0060F2C8 /* TopicDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDescriptionViewController.swift; sourceTree = "<group>"; };
+		6FE25CF11FFD450F0060F2C8 /* TopicActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicActionsViewController.swift; sourceTree = "<group>"; };
+		6FE25CF31FFD45370060F2C8 /* RelatedTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedTopicsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,12 @@
 		6F7418CE1FDD809B0019DC1F /* pkg.topic.detail */ = {
 			isa = PBXGroup;
 			children = (
-				6F7418CA1FDD6D350019DC1F /* TopicDetailsFlowViewController.swift */,
+				6F7418CA1FDD6D350019DC1F /* TopicDetailsViewController.swift */,
+				6FE25CEB1FFD44400060F2C8 /* TopicVideoViewController.swift */,
+				6FE25CED1FFD44B40060F2C8 /* TopicTitleViewController.swift */,
+				6FE25CEF1FFD44DF0060F2C8 /* TopicDescriptionViewController.swift */,
+				6FE25CF11FFD450F0060F2C8 /* TopicActionsViewController.swift */,
+				6FE25CF31FFD45370060F2C8 /* RelatedTopicsViewController.swift */,
 			);
 			path = pkg.topic.detail;
 			sourceTree = "<group>";
@@ -171,13 +186,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE25CEE1FFD44B40060F2C8 /* TopicTitleViewController.swift in Sources */,
+				6FE25CF21FFD450F0060F2C8 /* TopicActionsViewController.swift in Sources */,
 				6F7418C51FDD68040019DC1F /* UIViewController+Embed.swift in Sources */,
 				6F18E9711FC993F300577A2A /* AppDelegate.swift in Sources */,
 				6F7418C71FDD6CCB0019DC1F /* TopicListFlowViewController.swift in Sources */,
 				6F7418C91FDD6CEE0019DC1F /* TopicListViewController.swift in Sources */,
+				6FE25CF41FFD45370060F2C8 /* RelatedTopicsViewController.swift in Sources */,
 				6F7418CD1FDD719D0019DC1F /* TopicListDelegate.swift in Sources */,
-				6F7418CB1FDD6D350019DC1F /* TopicDetailsFlowViewController.swift in Sources */,
+				6F7418CB1FDD6D350019DC1F /* TopicDetailsViewController.swift in Sources */,
+				6FE25CEC1FFD44400060F2C8 /* TopicVideoViewController.swift in Sources */,
 				6F7418C31FDD66350019DC1F /* ListFlowViewController.swift in Sources */,
+				6FE25CF01FFD44DF0060F2C8 /* TopicDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,8 +26,8 @@ private extension TopicListFlowViewController {
         return newViewController
     }
 
-    func newDetailFlowViewController() -> TopicDetailsFlowViewController {
-        let newViewController = TopicDetailsFlowViewController()
+    func newDetailViewController() -> TopicDetailsViewController {
+        let newViewController = TopicDetailsViewController()
         return newViewController
     }
 
@@ -47,7 +47,7 @@ private extension TopicListFlowViewController {
 extension TopicListFlowViewController: TopicListDelegate {
 
     func didSelect(item: Any) {
-        let detailsView = newDetailFlowViewController()
+        let detailsView = newDetailViewController()
         detailsView.title = String(describing: item)
         present(detailsController: detailsView)
     }
