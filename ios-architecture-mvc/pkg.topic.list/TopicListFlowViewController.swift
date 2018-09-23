@@ -23,6 +23,7 @@ private extension TopicListFlowViewController {
 
     func newListViewController() -> TopicListViewController {
         let newViewController = TopicListViewController()
+        newViewController.store = RemoteStore(hostName: "192.168.1.1", port: 8080)
         return newViewController
     }
 

@@ -16,6 +16,19 @@
 		6F7418C91FDD6CEE0019DC1F /* TopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418C81FDD6CEE0019DC1F /* TopicListViewController.swift */; };
 		6F7418CB1FDD6D350019DC1F /* TopicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418CA1FDD6D350019DC1F /* TopicDetailsViewController.swift */; };
 		6F7418CD1FDD719D0019DC1F /* TopicListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7418CC1FDD719D0019DC1F /* TopicListDelegate.swift */; };
+		6FE10F4D21443F31005F8ABB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F4C21443F31005F8ABB /* User.swift */; };
+		6FE10F4F21443F87005F8ABB /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F4E21443F87005F8ABB /* Presentation.swift */; };
+		6FE10F51214443DA005F8ABB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F50214443DA005F8ABB /* Store.swift */; };
+		6FE10F552144450C005F8ABB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F532144450C005F8ABB /* Result.swift */; };
+		6FE10F562144450C005F8ABB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F542144450C005F8ABB /* Resource.swift */; };
+		6FE10F58214453A7005F8ABB /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F57214453A7005F8ABB /* RemoteStore.swift */; };
+		6FE10F5A21445468005F8ABB /* RandomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F5921445468005F8ABB /* RandomSession.swift */; };
+		6FE10F5C21445528005F8ABB /* Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F5B21445528005F8ABB /* Randomizable.swift */; };
+		6FE10F63214460DC005F8ABB /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F62214460DC005F8ABB /* ArrayDataSource.swift */; };
+		6FE10F6521446E91005F8ABB /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F6421446E91005F8ABB /* Random.swift */; };
+		6FE10F6721447F49005F8ABB /* PresentationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F6621447F49005F8ABB /* PresentationTableViewCell.swift */; };
+		6FE10F69214480EC005F8ABB /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F68214480EC005F8ABB /* OutlineView.swift */; };
+		6FE10F6B214988E7005F8ABB /* UIView+ParentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE10F6A214988E7005F8ABB /* UIView+ParentCell.swift */; };
 		6FE25CEC1FFD44400060F2C8 /* TopicVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CEB1FFD44400060F2C8 /* TopicVideoViewController.swift */; };
 		6FE25CEE1FFD44B40060F2C8 /* TopicTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CED1FFD44B40060F2C8 /* TopicTitleViewController.swift */; };
 		6FE25CF01FFD44DF0060F2C8 /* TopicDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE25CEF1FFD44DF0060F2C8 /* TopicDescriptionViewController.swift */; };
@@ -35,6 +48,19 @@
 		6F7418C81FDD6CEE0019DC1F /* TopicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListViewController.swift; sourceTree = "<group>"; };
 		6F7418CA1FDD6D350019DC1F /* TopicDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailsViewController.swift; sourceTree = "<group>"; };
 		6F7418CC1FDD719D0019DC1F /* TopicListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListDelegate.swift; sourceTree = "<group>"; };
+		6FE10F4C21443F31005F8ABB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6FE10F4E21443F87005F8ABB /* Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		6FE10F50214443DA005F8ABB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6FE10F532144450C005F8ABB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6FE10F542144450C005F8ABB /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		6FE10F57214453A7005F8ABB /* RemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
+		6FE10F5921445468005F8ABB /* RandomSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSession.swift; sourceTree = "<group>"; };
+		6FE10F5B21445528005F8ABB /* Randomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizable.swift; sourceTree = "<group>"; };
+		6FE10F62214460DC005F8ABB /* ArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		6FE10F6421446E91005F8ABB /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		6FE10F6621447F49005F8ABB /* PresentationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTableViewCell.swift; sourceTree = "<group>"; };
+		6FE10F68214480EC005F8ABB /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		6FE10F6A214988E7005F8ABB /* UIView+ParentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ParentCell.swift"; sourceTree = "<group>"; };
 		6FE25CEB1FFD44400060F2C8 /* TopicVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVideoViewController.swift; sourceTree = "<group>"; };
 		6FE25CED1FFD44B40060F2C8 /* TopicTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTitleViewController.swift; sourceTree = "<group>"; };
 		6FE25CEF1FFD44DF0060F2C8 /* TopicDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDescriptionViewController.swift; sourceTree = "<group>"; };
@@ -72,10 +98,13 @@
 		6F18E96F1FC993F300577A2A /* ios-architecture-mvc */ = {
 			isa = PBXGroup;
 			children = (
+				6FE10F5D21445E39005F8ABB /* pkg.view */,
+				6FE10F52214444EC005F8ABB /* pkg.helpers */,
 				6F18E9701FC993F300577A2A /* AppDelegate.swift */,
 				6F18E9771FC993F300577A2A /* Assets.xcassets */,
 				6F18E97C1FC993F300577A2A /* Info.plist */,
 				6F18E9791FC993F300577A2A /* LaunchScreen.storyboard */,
+				6FE10F4B21443F0A005F8ABB /* pkg.model */,
 				6F7418C01FDD65D00019DC1F /* pkg.application */,
 				6F7418CE1FDD809B0019DC1F /* pkg.topic.detail */,
 				6F7418C11FDD66120019DC1F /* pkg.topic.list */,
@@ -115,6 +144,40 @@
 			path = pkg.topic.detail;
 			sourceTree = "<group>";
 		};
+		6FE10F4B21443F0A005F8ABB /* pkg.model */ = {
+			isa = PBXGroup;
+			children = (
+				6FE10F4C21443F31005F8ABB /* User.swift */,
+				6FE10F4E21443F87005F8ABB /* Presentation.swift */,
+				6FE10F50214443DA005F8ABB /* Store.swift */,
+				6FE10F57214453A7005F8ABB /* RemoteStore.swift */,
+			);
+			path = pkg.model;
+			sourceTree = "<group>";
+		};
+		6FE10F52214444EC005F8ABB /* pkg.helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6FE10F542144450C005F8ABB /* Resource.swift */,
+				6FE10F532144450C005F8ABB /* Result.swift */,
+				6FE10F5B21445528005F8ABB /* Randomizable.swift */,
+				6FE10F5921445468005F8ABB /* RandomSession.swift */,
+				6FE10F6421446E91005F8ABB /* Random.swift */,
+				6FE10F6A214988E7005F8ABB /* UIView+ParentCell.swift */,
+			);
+			path = pkg.helpers;
+			sourceTree = "<group>";
+		};
+		6FE10F5D21445E39005F8ABB /* pkg.view */ = {
+			isa = PBXGroup;
+			children = (
+				6FE10F62214460DC005F8ABB /* ArrayDataSource.swift */,
+				6FE10F68214480EC005F8ABB /* OutlineView.swift */,
+				6FE10F6621447F49005F8ABB /* PresentationTableViewCell.swift */,
+			);
+			path = pkg.view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,11 +205,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Beilmo;
 				TargetAttributes = {
 					6F18E96C1FC993F300577A2A = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -186,18 +250,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE10F51214443DA005F8ABB /* Store.swift in Sources */,
+				6FE10F4D21443F31005F8ABB /* User.swift in Sources */,
 				6FE25CEE1FFD44B40060F2C8 /* TopicTitleViewController.swift in Sources */,
 				6FE25CF21FFD450F0060F2C8 /* TopicActionsViewController.swift in Sources */,
 				6F7418C51FDD68040019DC1F /* UIViewController+Embed.swift in Sources */,
+				6FE10F5C21445528005F8ABB /* Randomizable.swift in Sources */,
 				6F18E9711FC993F300577A2A /* AppDelegate.swift in Sources */,
+				6FE10F552144450C005F8ABB /* Result.swift in Sources */,
 				6F7418C71FDD6CCB0019DC1F /* TopicListFlowViewController.swift in Sources */,
+				6FE10F4F21443F87005F8ABB /* Presentation.swift in Sources */,
+				6FE10F6521446E91005F8ABB /* Random.swift in Sources */,
+				6FE10F58214453A7005F8ABB /* RemoteStore.swift in Sources */,
 				6F7418C91FDD6CEE0019DC1F /* TopicListViewController.swift in Sources */,
 				6FE25CF41FFD45370060F2C8 /* RelatedTopicsViewController.swift in Sources */,
 				6F7418CD1FDD719D0019DC1F /* TopicListDelegate.swift in Sources */,
+				6FE10F69214480EC005F8ABB /* OutlineView.swift in Sources */,
+				6FE10F6B214988E7005F8ABB /* UIView+ParentCell.swift in Sources */,
 				6F7418CB1FDD6D350019DC1F /* TopicDetailsViewController.swift in Sources */,
+				6FE10F6721447F49005F8ABB /* PresentationTableViewCell.swift in Sources */,
 				6FE25CEC1FFD44400060F2C8 /* TopicVideoViewController.swift in Sources */,
+				6FE10F63214460DC005F8ABB /* ArrayDataSource.swift in Sources */,
 				6F7418C31FDD66350019DC1F /* ListFlowViewController.swift in Sources */,
 				6FE25CF01FFD44DF0060F2C8 /* TopicDescriptionViewController.swift in Sources */,
+				6FE10F5A21445468005F8ABB /* RandomSession.swift in Sources */,
+				6FE10F562144450C005F8ABB /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +306,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -236,6 +314,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -286,6 +365,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -293,6 +373,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -331,7 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beilmo.ios-architecture-mvc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -345,7 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beilmo.ios-architecture-mvc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -11,8 +11,8 @@ import UIKit
 extension UIViewController {
 
     func embed(child: UIViewController, duration: TimeInterval = 0.0, completion: ((Bool) -> Void)? = nil) {
-        let current = childViewControllers.last
-        addChildViewController(child)
+        let current = children.last
+        addChild(child)
 
         let newView = child.view!
         newView.translatesAutoresizingMaskIntoConstraints = true
@@ -20,18 +20,18 @@ extension UIViewController {
         newView.frame = view.bounds
 
         if let existing = current {
-            existing.willMove(toParentViewController: nil)
+            existing.willMove(toParent: nil)
 
             transition(from: existing, to: child, duration: duration, options: [.transitionCrossDissolve], animations: { }, completion: { done in
-                existing.removeFromParentViewController()
-                child.didMove(toParentViewController: self)
+                existing.removeFromParent()
+                child.didMove(toParent: self)
                 completion?(done)
             })
         } else {
             view.addSubview(newView)
 
             UIView.animate(withDuration: duration, delay: 0, options: [.transitionCrossDissolve], animations: { }, completion: { done in
-                child.didMove(toParentViewController: self)
+                child.didMove(toParent: self)
                 completion?(done)
             })
         }

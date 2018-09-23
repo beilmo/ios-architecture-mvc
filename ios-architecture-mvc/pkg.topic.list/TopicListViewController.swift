@@ -8,35 +8,38 @@
 
 import UIKit
 
+fileprivate extension String {
+    static let cellIdentifier = "TopicCellIdentifier"
+}
+
 class TopicListViewController: UITableViewController {
 
-    private struct Constants {
-        static let cellIdentifier = "TopicCellIdentifier"
-    }
-
+    var store: Store!
     weak var delegate: TopicListDelegate?
 
+    var dataSource: ArrayDataSource<Presentation>! {
+        didSet {
+            tableView.dataSource = dataSource
+        }
+    }
+
     override func viewDidLoad() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: Constants.cellIdentifier)
+        tableView.register(PresentationTableViewCell.self, forCellReuseIdentifier: .cellIdentifier)
+
+        RandomSession.shared.load(store.presentationList()) { (result) in
+            switch result.map(self.bindDownloadedContent) {
+            case let .success(value):
+                self.dataSource = self.makeDataSource(value)
+            case let .failure(error):
+                dump(error)
+                break
+            }
+        }
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegate?.didSelect(item: itemAtPosition(indexPath: indexPath))
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath)
-        return cell
-    }
-
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.textLabel?.text = String(describing: itemAtPosition(indexPath: indexPath))
-    }
-
 }
 
 
@@ -48,4 +51,68 @@ extension TopicListViewController {
         return indexPath.description
     }
 
+}
+
+extension TopicListViewController {
+    func makeDataSource(_ contents: [Presentation]) -> ArrayDataSource<Presentation> {
+        return ArrayDataSource(contents,
+                               identifier: { _ in .cellIdentifier },
+                               configure: configurePresentationCell)
+    }
+
+    func bindDownloadedContent(to presentationList: [Presentation]) -> [Presentation] {
+        return presentationList.map(bindDownloadedContent)
+    }
+
+    func bindDownloadedContent(to presentation: Presentation) -> Presentation {
+        let contentList: [String: Presentation.Content] = [:]
+
+        var updatedPresentation = presentation
+        updatedPresentation.content = contentList[presentation.id]
+        return updatedPresentation
+    }
+
+    @objc func toggleFavorite(_ sender: UISlider) {
+        guard
+            let cell = sender.parentCell as? PresentationTableViewCell,
+            let indexPath = tableView.indexPath(for: cell) else {
+            fatalError()
+        }
+
+        var presentation = dataSource.contents[indexPath.row]
+        presentation.isFavorite.toggle()
+
+//        RandomSession.shared.load(store.change(presentation)) { result in
+//            switch result {
+//            case let .failure(error):
+//                dump(error)
+//            }
+//        }
+
+        dataSource.contents[indexPath.row].isFavorite.toggle()
+    }
+
+    @objc func downloadContent(_ sender: UIButton) {
+        guard
+            let cell = sender.parentCell as? PresentationTableViewCell,
+            let indexPath = tableView.indexPath(for: cell) else {
+                fatalError()
+        }
+
+    }
+
+    var configurePresentationCell: (Presentation, UITableViewCell) -> Void {
+        return { element, cell in
+            guard let cell = cell as? PresentationTableViewCell else {
+                return
+            }
+
+            cell.headlineLabel.text = element.title
+            cell.favoriteSwitch.isOn = element.isFavorite
+            cell.downloadButton.isHidden = true
+
+            cell.favoriteSwitch.addTarget(self, action: #selector(self.toggleFavorite(_:)), for: .valueChanged)
+            cell.downloadButton.addTarget(self, action: #selector(self.downloadContent(_:)), for: .touchUpInside)
+        }
+    }
 }
